@@ -1,9 +1,16 @@
 import { useState } from "react";
+import Footer from "./components/Footer";
+import Navigation from "./components/Navigation";
+import Topics from "./pages/Topics";
+import FeaturedPost from "./pages/FeaturedPost";
 import "./App.css";
 
 function App() {
   return <>
-  <h1>Let the games begin!</h1>
+  <Navigation/>
+  <Topics/>
+  <FeaturedPost/>
+  <Footer/>
   </>;
 }
 

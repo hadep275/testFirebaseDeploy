@@ -262,12 +262,12 @@
   }
 
   .navbar-link {
-    color: var(--text-wild-blue-yonder);
+    color: var(--text-rodeo-dust);
     font-weight: unset;
   }
 
   .navbar-link:is(:hover, :focus-visible) {
-    color: var(--text-carolina-blue);
+    color: var(--text-jaffa);
     transform: translateX(0);
   }
 

@@ -1,10 +1,13 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import { createGlobalStyle, ThemeProvider as StyledThemeProvider } from 'styled-components';
+import "../css/root.css";
+import "../css/responsive.css";
+import "../css/styles.css";
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: ${props => (props.theme.isDarkMode ? '#1a1a1a' : '#f69cc1')};
-    color: ${props => (props.theme.isDarkMode ? '#f69cc1' : '#000000')};
+    background-color: ${props => (props.theme.isDarkMode ? '#280f01' : '#c89892')};
+    color: ${props => (props.theme.isDarkMode ? '#f2ccba' : '#000000')};
   }
   h2{
     color: ${props => (props.theme.isDarkMode ? ' #f69 ' : '#fff')};
@@ -25,25 +28,7 @@ const GlobalStyle = createGlobalStyle`
   }
   textarea:hover{
     background-color: ${props => (props.theme.isDarkMode ? ' #fff ' : '#000')};
-  }
-  .project-item{
-    background-color: ${props => (props.theme.isDarkMode ? ' #000 ' : '#002')};
-    color: ${props => (props.theme.isDarkMode ? ' #f69 ' : '#fff')};
-    box-shadow: ${props => (props.theme.isDarkMode ? ' 0 0 20px rgba(0, 0, 0, 0.9) ' : '0 0 20px rgba(0, 0, 0, 0.6)')};
-    a{
-      color: ${props => (props.theme.isDarkMode ? ' #f69 ' : '#fff')};
-    }}
-  .project-item:hover {
-    background-color: ${props => (props.theme.isDarkMode ? ' #fff ' : '#b31e50')};
-    color: ${props => (props.theme.isDarkMode ? ' #000 ' : '#f69cc1')};
-    box-shadow: ${props => (props.theme.isDarkMode ? ' 0 0 20px rgba(0, 0, 0, 0.9) ' : '0 0 20px rgba(0, 0, 0, 0.6)')};
-  a{
-    color: ${props => (props.theme.isDarkMode ? ' #000 ' : '#f69aa0')};
-  }
-  a: hover{
-    color: ${props => (props.theme.isDarkMode ? ' magenta ' : 'blue')};
-  }
-}
+  
  
 `;
 

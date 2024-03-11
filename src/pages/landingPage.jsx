@@ -232,6 +232,8 @@ function App() {
               </div>
             </div>
           </section>
+
+
           {/* <!-- 
             - #FEATURED POST
           --> */}
@@ -239,11 +241,8 @@ function App() {
             <div class="featured-container">
               <h3 class="featured-title">Featured Post</h3>
             </div>
-            {/* <!-- blog-container --> */}
             <div class="blog-container">
-              {/* <!-- box-1 --> */}
               <div class="blog-box">
-                {/* <!-- img --> */}
                 <div class="blog-img">
                   <img src="images/author-1.png" alt="1st" />
                 </div>
@@ -262,9 +261,7 @@ function App() {
                   <a href="#">Read More</a>
                 </div>
               </div>
-              {/* <!-- box-1 --> */}
               <div class="blog-box">
-                {/* <!-- img --> */}
                 <div class="blog-img">
                   <img src="images/author-2.png" alt="1st" />
                 </div>
