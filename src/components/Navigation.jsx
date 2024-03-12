@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ThemeToggle from "../components/ThemeToggle";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faArrowUp} from "@fortawesome/free-solid-svg-icons";
+
 import "../css/root.css";
 import "../css/responsive.css";
 import "../css/styles.css";
@@ -22,7 +25,7 @@ const Navbar = () => {
         setHeaderActive(true);
         backTopBtn.classList.add("active");
       } else {
-        setHeaderActive(false);
+        setHeaderActive(true);
         backTopBtn.classList.remove("active");
       }
     };
@@ -53,7 +56,11 @@ const Navbar = () => {
                 aria-label="close menu"
                 onClick={toggleNav}
               >
-                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                <FontAwesomeIcon
+                  icon="fa-solid fa-bars"
+                  name="close-outline"
+                  aria-hidden="true"
+                />x
               </button>
             </div>
 
@@ -165,7 +172,11 @@ const Navbar = () => {
             aria-label="open menu"
             onClick={toggleNav}
           >
-            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            <FontAwesomeIcon
+              icon="fa-solid fa-bars"
+              name="menu-outline"
+              aria-hidden="true"
+            />≡
           </button>
         </div>
       </header>
@@ -175,7 +186,11 @@ const Navbar = () => {
         aria-label="back to top"
         data-back-top-btn
       >
-        <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+        <FontAwesomeIcon
+          icon="fa-solid fa-arrow-up"
+          name="arrow-up-outline"
+          aria-hidden="true"
+        />
       </a>
     </>
   );
